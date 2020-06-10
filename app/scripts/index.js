@@ -7,7 +7,7 @@ import Web3 from 'web3'
 import contract from 'truffle-contract'
 
 // Import our contract artifacts and turn them into usable abstractions.
-import metaCoinArtifact from '../../build/contracts/FavorToken.json'
+import favorTokenArtifact from '../../build/contracts/FavorToken.json'
 import IPaymaster from '../../build/contracts/IPaymaster.json'
 import { networks } from './networks'
 
@@ -17,7 +17,7 @@ const configureGSN = require('@opengsn/gsn/dist/src/relayclient/GSNConfigurator'
 const RelayProvider = Gsn.RelayProvider
 
 // FavorToken is our usable abstraction, which we'll use through the code below.
-const FavorToken = contract(metaCoinArtifact)
+const FavorToken = contract(favorTokenArtifact)
 
 // The following code is simple to show off interacting with your contracts.
 // As your needs grow you will likely need to change its form and structure.
@@ -138,6 +138,7 @@ const App = {
 
       return meta.balanceOf.call(account, { from: account })
     }).then(function (value) {
+      value = web3.utils.fromWei(value,'kwei');
       const balanceElement = document.getElementById('balance')
       balanceElement.innerHTML = value.valueOf()
 
@@ -175,7 +176,7 @@ const App = {
   transfer: function () {
     const self = this
 
-    const amount = parseInt(document.getElementById('amount').value)
+    const amount = parseInt(document.getElementById('amount').value) * 1000
     const receiver = document.getElementById('receiver').value
 
     this.setStatus('Initiating transaction... (please wait)')

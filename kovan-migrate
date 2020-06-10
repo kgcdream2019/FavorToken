@@ -1,0 +1,17 @@
+
+using forwarder:  0x6453D37248Ab2C16eBd1A8f782a2CBC65860E60B
+
+   Deploying 'FavorToken'
+   ----------------------
+   > transaction hash:    0x17b7541d9206bb1f3aedb1c2825fb9c20b9261058596092139390a44eb0939aa
+   > Blocks: 2            Seconds: 11
+   > contract address:    0xC85629034Da7760254e85d1101eDA7B6f6121424
+   > block number:        18998430
+   > block timestamp:     1591807364
+   > account:             0x28E5dBAd69dD8723a2f93849665988E0B882A8b7
+   > balance:             1.5248997288
+   > gas used:            738129
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01476258 ETH
+

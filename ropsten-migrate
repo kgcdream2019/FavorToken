@@ -1,0 +1,19 @@
+
+2_deploy_contracts.js
+=====================
+using forwarder:  0xcC87aa60a6457D9606995C4E7E9c38A2b627Da88
+
+   Deploying 'FavorToken'
+   ----------------------
+   > transaction hash:    0xa10060c2c8b705c66c23bf48c00b50a06deae66cc40a827b2ee31650ca58c48c
+   > Blocks: 1            Seconds: 14
+   > contract address:    0x577236acF8a1EBCc0121126d04Be983089DcDB71
+   > block number:        8064372
+   > block timestamp:     1591809539
+   > account:             0x28E5dBAd69dD8723a2f93849665988E0B882A8b7
+   > balance:             1.48523742
+   > gas used:            738129
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01476258 ETH
+
