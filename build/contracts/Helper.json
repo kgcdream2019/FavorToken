@@ -1,0 +1,148 @@
+{
+  "contractName": "Helper",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/ubuntu/opengsn/metacoin/contracts/Helper.sol\":\"Helper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ubuntu/opengsn/metacoin/contracts/Helper.sol\":{\"keccak256\":\"0x6bf34ed9262d2157cd7002490a181d8a142ade2b5db995fe93c58f1c555a4994\",\"urls\":[\"bzz-raw://bd587221b44381a53652a649f502911544e38f154e3631371aa0e7e67135a6a4\",\"dweb:/ipfs/QmSs4Kae5MpghVByb7R24wNwwCEcwNnxSeqdBTNS6se6A9\"]},\"@0x/contracts-utils/contracts/src/LibBytes.sol\":{\"keccak256\":\"0xab487522b79e5c07751c44d3c6a45ea42f526f065168a1d0f214a1cc6d24ca84\",\"urls\":[\"bzz-raw://623639d00c7775e02754882d36d176001741a199dcb549caf2d57507d33e29c8\",\"dweb:/ipfs/QmUMt7sKj1We3H677VNN253diDxo1naL3v9MJoKgwDT4o7\"]},\"@0x/contracts-utils/contracts/src/LibBytesRichErrors.sol\":{\"keccak256\":\"0xec98fecbab306abab18ccfcb83cdd1ed0b1c70e5ced2259835a2b61eae2d69d1\",\"urls\":[\"bzz-raw://50d8760f638321b242e60e5d2a819b7504486aff1712a8895ee213122535b7be\",\"dweb:/ipfs/QmThnQz9VG54woPzs14BK6jGs4T7jo38EtEMPzVXnWi6YA\"]},\"@0x/contracts-utils/contracts/src/LibRichErrors.sol\":{\"keccak256\":\"0xe3ce6ded2fea3cc80998ca4d364bda530e273af0ba1c78d22a6cdadb6f64186e\",\"urls\":[\"bzz-raw://8239629dbcee9797a8f8157f03c2b78827b446787b4d53b3033a3e1ab538ad0b\",\"dweb:/ipfs/QmbttkX94CxMkS6t1K4He5bNwGKCRUhKqTt9pNsAL5ynst\"]},\"@opengsn/gsn/contracts/BaseRelayRecipient.sol\":{\"keccak256\":\"0xc2b5eea34921584a8b6ce57d31662f69e4156580fd04d7cc49534bab8dc5ff2c\",\"urls\":[\"bzz-raw://54a50b3fb4058d8c73ae373081488b70e2d25f5d9cf87a03daf9ccf5823ec371\",\"dweb:/ipfs/QmNnNaVZR1bFaZyMwEpkTJcNUtuHkYzFVStvdvV8WZiVfE\"]},\"@opengsn/gsn/contracts/Penalizer.sol\":{\"keccak256\":\"0xa1849fcd181d16611e7730dc8c5106c3babae43297b28a942c9e324325bab08f\",\"urls\":[\"bzz-raw://d3b3a2805d3dd941b748e4fb616d95fa95c2a0074eb8e95deed34ef593d5c06e\",\"dweb:/ipfs/QmR4TGaPuR5unnqVghivgg5PWGTZRwsrZ2XLroq4X6ZASe\"]},\"@opengsn/gsn/contracts/RelayHub.sol\":{\"keccak256\":\"0x037f33015188771c0a69fda8810eba902e9517f64d9d25ef2ebec1a73f3a0465\",\"urls\":[\"bzz-raw://c1b93d8fec6a17e906212b8b8170f332181c60dd85839ed75d72ba15270fa43d\",\"dweb:/ipfs/QmQPF1eduAkUHqo5ubRkzL5W7eTDh93VbetbDvz4bRoUb7\"]},\"@opengsn/gsn/contracts/StakeManager.sol\":{\"keccak256\":\"0xb0d88cf53821e34d18c642f42fc226fb6e837206d8cd6158922c6d33f8f5da6c\",\"urls\":[\"bzz-raw://713e18c2a843068e78ee5ae58487cd051859e455a999995cc1a8467700c68d2b\",\"dweb:/ipfs/QmR3UAUuuL4D5VguPCRWyUHabkQFE4XiZf1ekcbLiVmC4r\"]},\"@opengsn/gsn/contracts/TrustedForwarder.sol\":{\"keccak256\":\"0xe08443b49fb2f7c5876c8424aa750ee322b9e07020c3328c241d10b418ffb427\",\"urls\":[\"bzz-raw://84a421baf1df9fb63a2cb9e26c4f834b8854d1f1b13410bac85fa94c042dc3a4\",\"dweb:/ipfs/QmendRAwbLpeN2NASq1MyGnLusKrhKDjD5hSZSYHE72byM\"]},\"@opengsn/gsn/contracts/interfaces/IPaymaster.sol\":{\"keccak256\":\"0xfd5cf9c6b6a52d6c551c59ed99aa220e73b88cf511c386a60f0834135c5154ff\",\"urls\":[\"bzz-raw://1657213d649d64170c6f9c1658322d107de8a2ba52b690588dabda34ced2c33b\",\"dweb:/ipfs/QmUteZmFNWjEEJR29z8AwXniDpwfVmqPKofbLPmgZbe45R\"]},\"@opengsn/gsn/contracts/interfaces/IRelayHub.sol\":{\"keccak256\":\"0xd3f81fcc1c48070a99cb20521e2e7437aaf4933979f7a483539f0ed8a4819e07\",\"urls\":[\"bzz-raw://8f5af73c6818345a59535d7203932574eaa5cc4abb989a29e9c7f1221a4487ff\",\"dweb:/ipfs/QmY74HdfE8FKeS38zhWfoVRKq7xGyryBChsUTc5jF7P5SB\"]},\"@opengsn/gsn/contracts/interfaces/IRelayRecipient.sol\":{\"keccak256\":\"0xdb39baceed08b4aca367be016905d1f5b8f96ab805bf5f20714ab2f189c3a23c\",\"urls\":[\"bzz-raw://f8e1755c554fc3af8dee556b32afab38b9b18ce1a80eee012a9ccc6ab653d43a\",\"dweb:/ipfs/QmWsAZqfXWjThwWHK9B1fPgMBbULLf4nhoVSufd9b29bt8\"]},\"@opengsn/gsn/contracts/interfaces/IStakeManager.sol\":{\"keccak256\":\"0x423be20083f7f06b01168cd823437e2e264e2c82c4efb2b4f1f0e17bd8dd069a\",\"urls\":[\"bzz-raw://3321cfc52f49e8893558834e9429aa52002b5db7cdbd1494137d7b8d803bfc40\",\"dweb:/ipfs/QmRDPCQsVdn5jnQ46UPXv5sXi82cB7hFeKdMrThbj3aCiM\"]},\"@opengsn/gsn/contracts/interfaces/ITrustedForwarder.sol\":{\"keccak256\":\"0x728170f43511e6e25310d13513771ed01deecccf3981b71b58f81e728a2f4a77\",\"urls\":[\"bzz-raw://7e2ef62903b8f2c55adc82a7bc606b32974483d69368540d7ed8c32e59f87632\",\"dweb:/ipfs/Qmd5b2hQHe5imJEn2NCgvy9UkXcHyD5ngPPrLjtsg9RtEx\"]},\"@opengsn/gsn/contracts/utils/EIP712Sig.sol\":{\"keccak256\":\"0xc829f6383b61384b2b70c1491ada78b569f5faf3a077d5a8c559274829b8e63b\",\"urls\":[\"bzz-raw://2c57f3ed253e4054d1c3a11431f7ce2d82e5e51a6ff48975d6f92dc568dec317\",\"dweb:/ipfs/QmUahiigF2MP2dqzqkdc4RHXrLDYimpyGbfodHCUa16X8Z\"]},\"@opengsn/gsn/contracts/utils/GSNTypes.sol\":{\"keccak256\":\"0x44b28226bdb3695fe711677033275407961da103c9ae76b9346958bee44d54ad\",\"urls\":[\"bzz-raw://b92a8887a490b793555a462988e24970a986381fb580393a073488d50292bf43\",\"dweb:/ipfs/Qmf1nHciK3s9c2WWArj1imZtNQoC9hNN8SJagp7ujLfNnB\"]},\"@opengsn/gsn/contracts/utils/GsnUtils.sol\":{\"keccak256\":\"0xc4fd770024e829472f6fcd311765bd5fa039ffe57a1f7e14f0426fbfb657c453\",\"urls\":[\"bzz-raw://c546976a1fbe9609ba7290e4336edd676e3627fba5028b3821ce10c0808702dc\",\"dweb:/ipfs/QmXpuAYBEyRhNRSwqzea7UCzu4SXeFDccn72WRiVTy8J2a\"]},\"@opengsn/gsn/contracts/utils/RLPReader.sol\":{\"keccak256\":\"0xe7601d7dd26f65fe68374fecc0b01b5dd2175ed2d5dbfeaf256696b7cf4a1842\",\"urls\":[\"bzz-raw://6127925d61ac014b5c4a00a0159740de1431c1285945de9b0ced83a5afe1d1f6\",\"dweb:/ipfs/Qmco4v8u9juwgsuFwW7SVCwbSLSF2G92a2cc3NgeV1wX58\"]},\"openzeppelin-solidity/contracts/cryptography/ECDSA.sol\":{\"keccak256\":\"0xc19027309407a962d4d5f68ad3e5c31eab6ffb6b134dd4811fd0f3d93ffd618a\",\"urls\":[\"bzz-raw://6f56b64191ca32a253b4468dde12e0d4232796467579c7ec8ee82873dce65dea\",\"dweb:/ipfs/QmWzfweLGo8YcAcdcPSM9GRQQYayPFJv3GCCVWLzkXc4bE\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\",\"urls\":[\"bzz-raw://d62d769b2219d5de39013093412623e624fa887f871826ea3bae6052ee893610\",\"dweb:/ipfs/QmV3yVktya1s617QmuzQR2CfuJgUi3dR2xEZY9ecmqZ2G1\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820f07213e99b591b6477d993f182c3c09f0d68d8f9c698369773e4b87888e73cbb64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820f07213e99b591b6477d993f182c3c09f0d68d8f9c698369773e4b87888e73cbb64736f6c63430005100032",
+  "sourceMap": "331:19:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;331:19:2;;;;;;;",
+  "deployedSourceMap": "331:19:2:-;;;;;",
+  "source": "pragma solidity ^0.5.16;\n\n//do-nothing contract. just that we can have GSN artifacts in this project\n// (without \"polluting\" the FavorToken itself)\nimport \"@opengsn/gsn/contracts/RelayHub.sol\"; // import needed for artifact generation\nimport \"@opengsn/gsn/contracts/TrustedForwarder.sol\"; // import needed for artifact generation\n\ncontract Helper {\n}\n",
+  "sourcePath": "/home/ubuntu/opengsn/metacoin/contracts/Helper.sol",
+  "ast": {
+    "absolutePath": "/home/ubuntu/opengsn/metacoin/contracts/Helper.sol",
+    "exportedSymbols": {
+      "Helper": [
+        179
+      ]
+    },
+    "id": 180,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 176,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "@opengsn/gsn/contracts/RelayHub.sol",
+        "file": "@opengsn/gsn/contracts/RelayHub.sol",
+        "id": 177,
+        "nodeType": "ImportDirective",
+        "scope": 180,
+        "sourceUnit": 2245,
+        "src": "148:45:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@opengsn/gsn/contracts/TrustedForwarder.sol",
+        "file": "@opengsn/gsn/contracts/TrustedForwarder.sol",
+        "id": 178,
+        "nodeType": "ImportDirective",
+        "scope": 180,
+        "sourceUnit": 2901,
+        "src": "235:53:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 179,
+        "linearizedBaseContracts": [
+          179
+        ],
+        "name": "Helper",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 180,
+        "src": "331:19:2"
+      }
+    ],
+    "src": "0:351:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/ubuntu/opengsn/metacoin/contracts/Helper.sol",
+    "exportedSymbols": {
+      "Helper": [
+        179
+      ]
+    },
+    "id": 180,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 176,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "@opengsn/gsn/contracts/RelayHub.sol",
+        "file": "@opengsn/gsn/contracts/RelayHub.sol",
+        "id": 177,
+        "nodeType": "ImportDirective",
+        "scope": 180,
+        "sourceUnit": 2245,
+        "src": "148:45:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@opengsn/gsn/contracts/TrustedForwarder.sol",
+        "file": "@opengsn/gsn/contracts/TrustedForwarder.sol",
+        "id": 178,
+        "nodeType": "ImportDirective",
+        "scope": 180,
+        "sourceUnit": 2901,
+        "src": "235:53:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 179,
+        "linearizedBaseContracts": [
+          179
+        ],
+        "name": "Helper",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 180,
+        "src": "331:19:2"
+      }
+    ],
+    "src": "0:351:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-06-07T14:10:51.571Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

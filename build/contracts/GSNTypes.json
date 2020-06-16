@@ -1,0 +1,990 @@
+{
+  "contractName": "GSNTypes",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"@opengsn/gsn/contracts/utils/GSNTypes.sol\":\"GSNTypes\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@opengsn/gsn/contracts/utils/GSNTypes.sol\":{\"keccak256\":\"0x44b28226bdb3695fe711677033275407961da103c9ae76b9346958bee44d54ad\",\"urls\":[\"bzz-raw://b92a8887a490b793555a462988e24970a986381fb580393a073488d50292bf43\",\"dweb:/ipfs/Qmf1nHciK3s9c2WWArj1imZtNQoC9hNN8SJagp7ujLfNnB\"]}},\"version\":1}",
+  "bytecode": "0x60556023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a723158206ba07a82f52396c0657d8f76bd5ed198b14cbe5c0d4a122b55f1834c77a3c6d764736f6c63430005100032",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a723158206ba07a82f52396c0657d8f76bd5ed198b14cbe5c0d4a122b55f1834c77a3c6d764736f6c63430005100032",
+  "sourceMap": "26:601:18:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "26:601:18:-;;;;;;;;",
+  "source": "pragma solidity ^0.5.16;\n\nlibrary GSNTypes {\n\n    struct GasData {\n        uint256 gasLimit;\n        uint256 gasPrice;\n        uint256 pctRelayFee;\n        uint256 baseRelayFee;\n    }\n\n    struct RelayData {\n        address senderAddress;\n        uint256 senderNonce;\n        address relayWorker;\n        address paymaster;\n    }\n\n    struct RelayRequest {\n        address target;\n        bytes encodedFunction;\n        GasData gasData;\n        RelayData relayData;\n    }\n\n    struct GasLimits {\n        uint256 acceptRelayedCallGasLimit;\n        uint256 preRelayedCallGasLimit;\n        uint256 postRelayedCallGasLimit;\n    }\n}\n",
+  "sourcePath": "@opengsn/gsn/contracts/utils/GSNTypes.sol",
+  "ast": {
+    "absolutePath": "@opengsn/gsn/contracts/utils/GSNTypes.sol",
+    "exportedSymbols": {
+      "GSNTypes": [
+        3518
+      ]
+    },
+    "id": 3519,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3483,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:18"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3518,
+        "linearizedBaseContracts": [
+          3518
+        ],
+        "name": "GSNTypes",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "GSNTypes.GasData",
+            "id": 3492,
+            "members": [
+              {
+                "constant": false,
+                "id": 3485,
+                "name": "gasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "75:16:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3484,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "75:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3487,
+                "name": "gasPrice",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "101:16:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3486,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "101:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3489,
+                "name": "pctRelayFee",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "127:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3488,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "127:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3491,
+                "name": "baseRelayFee",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "156:20:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3490,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "156:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "GasData",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "50:133:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GSNTypes.RelayData",
+            "id": 3501,
+            "members": [
+              {
+                "constant": false,
+                "id": 3494,
+                "name": "senderAddress",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "216:21:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3493,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "216:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3496,
+                "name": "senderNonce",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "247:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3495,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "247:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3498,
+                "name": "relayWorker",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "276:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3497,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "276:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3500,
+                "name": "paymaster",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "305:17:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3499,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "305:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "RelayData",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "189:140:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GSNTypes.RelayRequest",
+            "id": 3510,
+            "members": [
+              {
+                "constant": false,
+                "id": 3503,
+                "name": "target",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "365:14:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3502,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "365:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3505,
+                "name": "encodedFunction",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "389:21:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 3504,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "389:5:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3507,
+                "name": "gasData",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "420:15:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_GasData_$3492_storage_ptr",
+                  "typeString": "struct GSNTypes.GasData"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 3506,
+                  "name": "GasData",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3492,
+                  "src": "420:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_GasData_$3492_storage_ptr",
+                    "typeString": "struct GSNTypes.GasData"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3509,
+                "name": "relayData",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "445:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_RelayData_$3501_storage_ptr",
+                  "typeString": "struct GSNTypes.RelayData"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 3508,
+                  "name": "RelayData",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3501,
+                  "src": "445:9:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RelayData_$3501_storage_ptr",
+                    "typeString": "struct GSNTypes.RelayData"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "RelayRequest",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "335:136:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GSNTypes.GasLimits",
+            "id": 3517,
+            "members": [
+              {
+                "constant": false,
+                "id": 3512,
+                "name": "acceptRelayedCallGasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3517,
+                "src": "504:33:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3511,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "504:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3514,
+                "name": "preRelayedCallGasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3517,
+                "src": "547:30:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3513,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "547:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3516,
+                "name": "postRelayedCallGasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3517,
+                "src": "587:31:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3515,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "587:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "GasLimits",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "477:148:18",
+            "visibility": "public"
+          }
+        ],
+        "scope": 3519,
+        "src": "26:601:18"
+      }
+    ],
+    "src": "0:628:18"
+  },
+  "legacyAST": {
+    "absolutePath": "@opengsn/gsn/contracts/utils/GSNTypes.sol",
+    "exportedSymbols": {
+      "GSNTypes": [
+        3518
+      ]
+    },
+    "id": 3519,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3483,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:18"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3518,
+        "linearizedBaseContracts": [
+          3518
+        ],
+        "name": "GSNTypes",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "GSNTypes.GasData",
+            "id": 3492,
+            "members": [
+              {
+                "constant": false,
+                "id": 3485,
+                "name": "gasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "75:16:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3484,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "75:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3487,
+                "name": "gasPrice",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "101:16:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3486,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "101:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3489,
+                "name": "pctRelayFee",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "127:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3488,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "127:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3491,
+                "name": "baseRelayFee",
+                "nodeType": "VariableDeclaration",
+                "scope": 3492,
+                "src": "156:20:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3490,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "156:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "GasData",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "50:133:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GSNTypes.RelayData",
+            "id": 3501,
+            "members": [
+              {
+                "constant": false,
+                "id": 3494,
+                "name": "senderAddress",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "216:21:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3493,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "216:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3496,
+                "name": "senderNonce",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "247:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3495,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "247:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3498,
+                "name": "relayWorker",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "276:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3497,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "276:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3500,
+                "name": "paymaster",
+                "nodeType": "VariableDeclaration",
+                "scope": 3501,
+                "src": "305:17:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3499,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "305:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "RelayData",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "189:140:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GSNTypes.RelayRequest",
+            "id": 3510,
+            "members": [
+              {
+                "constant": false,
+                "id": 3503,
+                "name": "target",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "365:14:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3502,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "365:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3505,
+                "name": "encodedFunction",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "389:21:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 3504,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "389:5:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3507,
+                "name": "gasData",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "420:15:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_GasData_$3492_storage_ptr",
+                  "typeString": "struct GSNTypes.GasData"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 3506,
+                  "name": "GasData",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3492,
+                  "src": "420:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_GasData_$3492_storage_ptr",
+                    "typeString": "struct GSNTypes.GasData"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3509,
+                "name": "relayData",
+                "nodeType": "VariableDeclaration",
+                "scope": 3510,
+                "src": "445:19:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_RelayData_$3501_storage_ptr",
+                  "typeString": "struct GSNTypes.RelayData"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 3508,
+                  "name": "RelayData",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3501,
+                  "src": "445:9:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RelayData_$3501_storage_ptr",
+                    "typeString": "struct GSNTypes.RelayData"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "RelayRequest",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "335:136:18",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GSNTypes.GasLimits",
+            "id": 3517,
+            "members": [
+              {
+                "constant": false,
+                "id": 3512,
+                "name": "acceptRelayedCallGasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3517,
+                "src": "504:33:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3511,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "504:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3514,
+                "name": "preRelayedCallGasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3517,
+                "src": "547:30:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3513,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "547:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3516,
+                "name": "postRelayedCallGasLimit",
+                "nodeType": "VariableDeclaration",
+                "scope": 3517,
+                "src": "587:31:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3515,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "587:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "GasLimits",
+            "nodeType": "StructDefinition",
+            "scope": 3518,
+            "src": "477:148:18",
+            "visibility": "public"
+          }
+        ],
+        "scope": 3519,
+        "src": "26:601:18"
+      }
+    ],
+    "src": "0:628:18"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-06-07T13:11:36.692Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
